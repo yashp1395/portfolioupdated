@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:yashpatil1395@gmail.com" class="contact-link">yashpatil1395@gmail.com</a>
+              <a href="mailto:yashpatil.pict@gmail.com" class="contact-link">yashpatil.pict@gmail.com</a>
             </div>
 
           </li>
@@ -423,6 +423,30 @@
 
         </div>
 
+        <!--
+          - project modal
+        -->
+
+        <div class="modal-container" data-project-modal-container>
+          <div class="overlay" data-project-overlay></div>
+          <section class="testimonials-modal" style="max-width: 700px;">
+            <button class="modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper" style="margin-bottom: 20px;">
+              <figure class="modal-avatar-box" style="width: 100%; border-radius: 14px; overflow: hidden;">
+                <img src="" alt="Project Image" data-project-modal-img style="width: 100%; height: auto; object-fit: cover;">
+              </figure>
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-project-modal-title>Project Title</h4>
+              <div data-project-modal-text style="margin-top: 15px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6;">
+                Project description here.
+              </div>
+            </div>
+          </section>
+        </div>
+
 
         <!--
           - clients
@@ -555,39 +579,27 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Full-Stack Development Intern - PICT</h4>
-
               <span>Feb 2026 — Apr 2026</span>
-
               <p class="timeline-text">
-                Contributed to the development of PathHire (Spring Boot/React). Integrated RESTful APIs, optimized database queries, and implemented role-based workflows for recruiters and applicants.
+                Developed PathHire, a full-stack job portal using React (TypeScript) and Spring Boot (Java 17), implementing JWT authentication, role-based access for job seekers and employers, and a MongoDB database. Designed and integrated 25+ RESTful API endpoints for job posting, application tracking, profile management, and real-time notifications; improved search efficiency with multi-criteria filtering (location, skills, experience). Built a responsive UI with Mantine UI and Tailwind CSS, added OTP-based email verification, and deployed the application using Docker with a production build pipeline.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">AI/ML Intern - ShadowFox</h4>
-
               <span>Jan 2026 — Feb 2026</span>
-
               <p class="timeline-text">
-                Developed an interactive Boston House Price Prediction web application using Scikit-learn and Streamlit for real-time estimations.
+                Completed a one-month intensive virtual internship focused on Artificial Intelligence and Machine Learning. Gained hands-on experience by working on real-time projects under a structured weekly program, progressing from beginner to advanced project levels. Developed and deployed an interactive Boston House Price Prediction web application using Scikit-learn and Streamlit, allowing real-time price estimation based on urban and socio-economic factors.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Java Programming Intern - CodSoft</h4>
-
               <span>Dec 2025 — Jan 2026</span>
-
               <p class="timeline-text">
-                Designed and implemented a scalable Student Management System in Java for managing academic records, courses, and grades.
+                Undertook a 4-week internship to develop and enhance skills in core and advanced Java programming. Diligently executed all assigned tasks and projects, contributing valuable work that led to successful program completion with wonderful remarks. Designed and implemented a Student Management System in Java to manage student records, courses, and grades with an efficient console-based user interface.
               </p>
-
             </li>
 
           </ol>
@@ -706,165 +718,149 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="full stack">
+            <!-- 1. PathHire -->
+            <li class="project-item active" data-filter-item data-category="full stack" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="PathHire" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-2.png" alt="PathHire" loading="lazy" data-project-img>
                 </figure>
-
-                <h3 class="project-title">PathHire Job Portal</h3>
-
+                <h3 class="project-title" data-project-title>PathHire Job Portal</h3>
                 <p class="project-category">Full Stack</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> React (TypeScript), Spring Boot (Java 17), MongoDB, Tailwind CSS.<br><br>
+                  A full-stack job portal designed for recruiters and applicants. Features JWT authentication, role-based access, and real-time notifications. Integrated 25+ RESTful APIs for profile management and multi-criteria searching. Deployed via Docker with a production build pipeline.
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="ai & ml">
+            <!-- 2. Metapic -->
+            <li class="project-item active" data-filter-item data-category="ai & ml" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="Metapic" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-4.png" alt="Metapic" loading="lazy" data-project-img>
                 </figure>
-
-                <h3 class="project-title">Metapic AI Photo-Sharing</h3>
-
+                <h3 class="project-title" data-project-title>Metapic AI Photo-Sharing</h3>
                 <p class="project-category">AI & ML</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> AI/ML, Python, Microservices, React.<br><br>
+                  A microservices platform that utilizes AI-powered facial recognition to retrieve and tag photos automatically. Designed to handle high-throughput image processing and provide secure, seamless photo sharing among peers.
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="ai & ml">
+            <!-- 3. AGV Fleet -->
+            <li class="project-item active" data-filter-item data-category="ai & ml" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="AGV Fleet" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-3.jpg" alt="AGV Fleet" loading="lazy" data-project-img>
                 </figure>
-
-                <h3 class="project-title">AGV Fleet Optimization</h3>
-
+                <h3 class="project-title" data-project-title>AGV Fleet Optimization</h3>
                 <p class="project-category">AI & ML</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> ML Algorithms, Python, Data Analytics.<br><br>
+                  An AI-driven fleet routing system that optimizes automated guided vehicle (AGV) paths in real-time. By implementing advanced predictive routing algorithms, this system successfully reduced delivery times by 35% in simulated environments.
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="backend">
+            <!-- 4. PROPAY -->
+            <li class="project-item active" data-filter-item data-category="backend" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="PROPAY" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-1.jpg" alt="PROPAY" loading="lazy" data-project-img>
                 </figure>
-
-                <h3 class="project-title">PROPAY - Payroll System</h3>
-
+                <h3 class="project-title" data-project-title>PROPAY - Payroll System</h3>
                 <p class="project-category">Backend</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> Java, Spring Boot, MySQL, REST API.<br><br>
+                  A robust backend enterprise payroll management system. Features secure employee salary processing, tax deductions, and automated report generation. Built with a focus on high security, data integrity, and scalable architecture.
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="full stack">
-              <a href="https://smart-agro-kappa.vercel.app/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="SMART - AGRO" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SMART - AGRO</h3>
-
-                <p class="project-category">Full Stack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="backend">
+            <!-- 5. SMART-AGRO -->
+            <li class="project-item active" data-filter-item data-category="full stack" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="JWT Vulnerability Analysis" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-6.png" alt="SMART - AGRO" loading="lazy" data-project-img>
                 </figure>
+                <h3 class="project-title" data-project-title>SMART - AGRO</h3>
+                <p class="project-category">Full Stack</p>
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> Node.js, React, Cloud Computing.<br><br>
+                  A SaaS project for Cloud Computing that provides real-time agricultural analytics. Features crop monitoring, weather tracking, and data visualization. <br><br>
+                  <a href="https://smart-agro-kappa.vercel.app/" target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: underline;">View Live Demo</a>
+                </div>
+              </a>
+            </li>
 
-                <h3 class="project-title">JWT Vulnerability API</h3>
-
+            <!-- 6. JWT Vulnerability API -->
+            <li class="project-item active" data-filter-item data-category="backend" data-project-item>
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-8.jpg" alt="JWT Vulnerability Analysis" loading="lazy" data-project-img>
+                </figure>
+                <h3 class="project-title" data-project-title>JWT Vulnerability API</h3>
                 <p class="project-category">Backend</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> Java 17, Spring Boot 3, Spring Security, WebSocket (STOMP), H2.<br><br>
+                  A security analysis platform demonstrating real-world JWT authentication vulnerabilities (Replay attacks, Token Leakage, Weak Secrets) and their industry-standard mitigations in both REST APIs and WebSocket communication.
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="full stack">
-              <a href="https://sorting-vizard.vercel.app/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="Sorting Visualizer" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Sorting Algorithm Visualizer</h3>
-
-                <p class="project-category">Full Stack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="full stack">
+            <!-- 7. Sorting Visualizer -->
+            <li class="project-item active" data-filter-item data-category="full stack" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="Nutrition Harmony" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-9.png" alt="Sorting Visualizer" loading="lazy" data-project-img>
                 </figure>
-
-                <h3 class="project-title">Nutrition Harmony</h3>
-
+                <h3 class="project-title" data-project-title>Sorting Algorithm Visualizer</h3>
                 <p class="project-category">Full Stack</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> HTML, CSS, JavaScript, React.<br><br>
+                  An interactive web tool designed to help users visualize and understand complex sorting algorithms (Quick Sort, Merge Sort, Bubble Sort, etc.) in real-time through animated step-by-step executions. <br><br>
+                  <a href="https://sorting-vizard.vercel.app/" target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: underline;">View Live Demo</a>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="ai & ml">
+            <!-- 8. Nutrition Harmony -->
+            <li class="project-item active" data-filter-item data-category="full stack" data-project-item>
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="Movie Recommender" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-7.png" alt="Nutrition Harmony" loading="lazy" data-project-img>
                 </figure>
+                <h3 class="project-title" data-project-title>Nutrition Harmony</h3>
+                <p class="project-category">Full Stack</p>
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> React, Node.js, Express, MongoDB.<br><br>
+                  A comprehensive health and fitness application that tracks daily nutrition, caloric intake, and fitness goals. Provides users with personalized macronutrient breakdowns and intuitive UI dashboards.
+                </div>
+              </a>
+            </li>
 
-                <h3 class="project-title">Movie Recommender System</h3>
-
+            <!-- 9. Movie Recommender -->
+            <li class="project-item active" data-filter-item data-category="ai & ml" data-project-item>
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-5.png" alt="Movie Recommender" loading="lazy" data-project-img>
+                </figure>
+                <h3 class="project-title" data-project-title>Movie Recommender System</h3>
                 <p class="project-category">AI & ML</p>
-
+                <div data-project-text style="display: none;">
+                  <strong>Tech Stack:</strong> Python, Machine Learning, Collaborative Filtering, Pandas.<br><br>
+                  An AI-based recommendation engine that suggests movies based on user viewing history and preferences. Employs advanced machine learning techniques to map user similarities and predict high-affinity content.
+                </div>
               </a>
             </li>
 
@@ -1090,24 +1086,16 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Let's Connect</h3>
 
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="form" data-form>
+          <p style="color: var(--light-gray); font-size: var(--fs-6); margin-bottom: 20px;">
+            I am currently open to discussing new software development opportunities, collaborations, or tech conversations. The contact form is currently under maintenance, so please feel free to reach out to me directly via email!
+          </p>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
+          <a href="mailto:yashpatil.pict@gmail.com" class="form-btn" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; padding: 15px 20px; border-radius: 14px; width: fit-content; background: var(--bg-gradient-yellow-1); color: var(--orange-yellow-crayola);">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Email</span>
+          </a>
 
         </section>
 
